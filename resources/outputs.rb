@@ -54,7 +54,8 @@ action :create do
       group 'telegraf'
       mode new_resource.rootonly ? '0640' : '0644'
     end
-    sensitive new_resource.rootonly
+    #sensitive new_resource.rootonly
+    sensitive true
     notifies :restart, "service[telegraf_#{new_resource.service_name}]", :delayed if new_resource.reload
   end
 end
