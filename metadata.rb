@@ -5,8 +5,8 @@ license 'Apache-2.0'
 description 'Installs/Configures telegraf'
 long_description 'Installs/Configures telegraf'
 version '0.13.0'
-source_url 'https://github.com/getCUJO/cujo-telegraf'
-issues_url 'https://github.com/getCUJO/cujo-telegraf/issues'
+source_url 'https://github.com/getCUJO/telegraf-cookbook'
+issues_url 'https://github.com/getCUJO/telegraf-cookbook/issues'
 
 chef_version '>= 12.5' if respond_to?(:chef_version)
 
