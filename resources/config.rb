@@ -61,6 +61,7 @@ action :create do
     action :create
     not_if { new_resource.outputs.empty? }
     notifies :restart, "service[telegraf_#{new_resource.name}]", :delayed
+    sensitive true
   end
 
   telegraf_inputs new_resource.name do
